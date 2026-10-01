@@ -15,7 +15,7 @@ A simple automated file organizer for Linux written completely in Bash.
 
 ### Part 1 (How it works)
 
-Arrange is a fast, lightweight, and simple automated organizer for your downloads directory. However, it can accomodate various configurations if you're a tinkerer with some basic bash knowledge; that route may intrest you. For the rest who just want their files organized; these are the basics. Arrange starts in the *~/Downloads* directory of course. We don't want our program going rouge on our fs.
+Arrange is a fast, lightweight, and simple automated organizer for your downloads directory. However, it can accomodate various configurations if you're a tinkerer with some basic bash knowledge; that route may intrest you. For the rest who just want their files organized; these are the basics. Arrange starts in the ***~/Downloads directory of course. We don't want our program going rouge on our fs.
 >We first need our enviorment our script will work in which will be our specefied directory(s) and after this we can look at our file extentions as 
     
     └── Think of this as home base/
@@ -38,9 +38,9 @@ Arrange is a fast, lightweight, and simple automated organizer for your download
                 │   └── foo.py
                 └── c/
                     └── foo.c
->>As you can see we first start in the downloads directory. Then our files are distrubted to their appropriate folders based on configured rules. Before we start moving anything; the script will perform a series of validation test to insure proper fucntionality. If it fails any of these conditions we will be prompted with a message explaing the error and why it can't move our files.
+>>As you can see our files arrive in the ***Downloads directory. Then our files are distrubted to their appropriate folders based on configured rules. Before we start moving anything; the script will perform a series of validation test to insure proper fucntionality. If it fails any of these conditions, we will be prompted with a message explaing the error and why it can't move our files.
 
-### Part 2 (Validation)
+### Part 2 (Validation) 
 
     if [ ! -d "${dirs[7]}" ]; then
     echo "I'm in danger... Logs directory or file does not exist."
@@ -59,18 +59,25 @@ Arrange is a fast, lightweight, and simple automated organizer for your download
     echo "I'm in danger... wrong working directory." 
     exit 1
     fi
-  - Check logs directory existence
-  - Check downloads directory existence
-  - Check read permissions
-  - Check working directory
+ *Check logs directory existence
+ *Check downloads directory existence
+ *Check read permissions
+ *Check working directory
+>Once all of our pre conditions have been met. We have our directory locations and file extentions, so now we need to a actually do something with them.
 
 ### Part 3 (Arranged)
-Once the script is done running it will have completed all of its iterations over the "${filext[@]}" array. If completed successfully 
+Once the script has prepared its enviorment, we can now move our files. This involves iterations over the ***"${filext[@]}" array. If completed successfully, each file should have been moved from your downloads to folders specefied in the script.
+ * Initialzation
+ * Verifcation
+ * Operation
+>Here is a clear idea of the file sorting process.
+
 
 ## To-do
  - Revision of orginzer function 
  - Array & loop compression 
  - Loging logic improvments required
+ - Add file checking logic for script exit when no files are present
 
 ## Install
 >     git clone https://github.com/Archbtw-sys/Arrange
@@ -79,4 +86,7 @@ Once the script is done running it will have completed all of its iterations ove
 ## Uninstall
 >     rm -r Arrange && rm /usr/local/bin/arrange 
 ## Fixing-bugs
+ - Need
+ - 
+ - 
    
