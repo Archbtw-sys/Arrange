@@ -38,11 +38,11 @@ Arrange is a fast, lightweight, and simple automated organizer for your download
                 │   └── foo.py
                 └── c/
                     └── foo.c
->>As you can see our files arrive in the ***Downloads directory. Then our files are distrubted to their appropriate folders based on configured rules. Before we start moving anything; the script will perform a series of validation test to insure proper fucntionality. If it fails any of these conditions, we will be prompted with a message explaing the error and why it can't move our files.
+>>As you can see our files arrive in the Downloads directory. Then our files are distrubted to their appropriate folders based on configured rules. Before we start moving anything; the script will perform a series of validation test to insure proper fucntionality. If it fails any of these conditions, we will be prompted with a message explaing the error and why it can't move our files.
 
 ### Part 2 (Validation) 
 
-    if [ ! -d "${dirs[7]}" ]; then
+    if [ ! -d "${dirs[17]}" ]; then
     echo "I'm in danger... Logs directory or file does not exist."
     exit 1
     elif 
@@ -59,18 +59,18 @@ Arrange is a fast, lightweight, and simple automated organizer for your download
     echo "I'm in danger... wrong working directory." 
     exit 1
     fi
- *Check logs directory existence
- *Check downloads directory existence
- *Check read permissions
- *Check working directory
+ * Check logs directory existence
+ * Check downloads directory existence
+ * Check read permissions
+ * Check working directory
 >Once all of our pre conditions have been met. We have our directory locations and file extentions, so now we need to a actually do something with them.
 
 ### Part 3 (Arranged)
-Once the script has prepared its enviorment, we can now move our files. This involves iterations over the ***"${filext[@]}" array. If completed successfully, each file should have been moved from your downloads to folders specefied in the script.
- * Initialzation
- * Verifcation
- * Operation
->Here is a clear idea of the file sorting process.
+Once the script has prepared its enviorment, we can now move our files. This involves iterations over the **"${filext[@]}" array. If completed successfully, each file should have been moved from your downloads to folders specefied in the script.
+ * Initialzation 
+ * Validation
+ * Organization
+>Here is a general idea of the file sorting process.
 
 
 ## To-do
