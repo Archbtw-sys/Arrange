@@ -8,14 +8,13 @@ A simple automated file organizer for Linux written completely in Bash.
 2. [To-do](#To-do)
 3. [Install](#Install)
 4. [Uninstall](#Uninstall)
-5. [Fixing bugs](#Fixing bugs)
+5. [Fixing-bugs](#Fixing-bugs)
 
 
 ## Preface
 Arrange is a fast and lightweight automated organizer for your Downloads folder specifically, but works with various file system locations.  Arrange starts in the ~/Downloads directory as expected after which it will begin scanning the directory for matching file extentions. Below is a layout of how Arrange works.
 >We first need our enviorment which is are directory(s) and give it language i.e file extentions. The tree below shows a basic representation of how the program maps files to corisponding locations. 
 >
-> .
 └── Think of this as home base/
     └── dirs/
         ├── ~/Downloads/
@@ -36,6 +35,7 @@ Arrange is a fast and lightweight automated organizer for your Downloads folder 
                 │   └── foo.py
                 └── c/
                     └── foo.c
+
 As you can see we first start in the downloads directory. Before this happens the script does a series of validation checks to insure proper fucntionality.
 
     if [ ! -d "${dirs[7]}" ]; then
@@ -64,4 +64,4 @@ As you can see we first start in the downloads directory. Before this happens th
 
 ## Uninstall
 
-## Fixing bugs
+## Fixing-bugs
