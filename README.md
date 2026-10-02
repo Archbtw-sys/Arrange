@@ -74,9 +74,9 @@ Once the script has prepared its environment, we can now move our files. This in
  * Validation
  * Organization
 >Here is a general idea of the file sorting process.
-1. First, we need to give our program data to work with, which will be in our arrays. 
-2. Next, our script will check certain conditions before proceeding with file movement. 
-3. Arrange will now search through your downloads folder for all matching extensions and sort them down to their subdirs. Arrange may be paired with cron jobs for automated cleanup. I have tested it, and it works fine, but if you do your own research. If you encounter a problem, you can submit an issue.  
+>> 1. First, we need to give our program data to work with, which will be in our arrays. 
+>> 2. Next, our script will check certain conditions before proceeding with file movement. 
+>> 3. Arrange will now search through your downloads folder for all matching extensions and sort them down to their subdirs. Arrange may be paired with cron jobs for automated cleanup. I have tested it, and it works fine, but if you do your own research. If you encounter a problem, you can submit an issue.  
 
 ## To-do
  - Revision of organizer function 
