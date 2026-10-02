@@ -74,9 +74,9 @@ Once the script has prepared its environment, we can now move our files. This in
  * Validation
  * Organization
 >Here is a general idea of the file sorting process.
-1. 
-2.
-3.
+1. First, we need to give our program data to work with, which will be in our arrays. 
+2. Next, our script will check certain conditions before proceeding with file movement. 
+3. Arrange will now search through your downloads folder for all matching extensions and sort them down to their subdirs. Arrange may be paired with cron jobs for automated cleanup. I have tested it, and it works fine, but if you do your own research. If you encounter a problem, you can submit an issue.  
 
 ## To-do
  - Revision of organizer function 
@@ -85,14 +85,15 @@ Once the script has prepared its environment, we can now move our files. This in
  - Add file checking logic for script exit when no files are present
 
 ## Install
->>     git clone https://github.com/Archbtw-sys/Arrange
->>     cd Arrange && chmod +x arrange && mv arrange /usr/local/bin/arrange
+>     git clone https://github.com/Archbtw-sys/Arrange
+>     cd Arrange && chmod +x arrange && mv arrange /usr/local/bin/arrange
 
 ## Uninstall
->>     rm -r Arrange && rm /usr/local/bin/arrange 
+>     rm -r Arrange && rm /usr/local/bin/arrange 
 
 ## Fixing-bugs
- - Need
+Considering this is a personal project that I’ve worked on during free time. There may be a few bugs that need fixing. If you encounter anything, submit an issue, and it will be reviewed. If you would like to contribute or use this project for your own learning or needs. You may use the tool as you see fit. Arrange is free as in gratis and also free as in libre.
+ -  
  - 
- - 
+ - Any other bugs found while testing
    
