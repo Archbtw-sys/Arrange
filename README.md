@@ -93,7 +93,7 @@ Once the script has prepared its environment, we can now move our files. This in
 
 ## Fixing-bugs
 >  Considering this is a personal project that I’ve worked on during free time. There may be a few bugs that need fixing. If you encounter anything, submit an issue, and it will be reviewed. If you would like to contribute or use this project for your own learning or needs. You may use the tool as you see fit. Arrange is free as in gratis and also free as in libre.
- -  
- - 
+ - Deduplication and collision needs work
+ - Unkown file type handling
  - Any other bugs found while testing
    
