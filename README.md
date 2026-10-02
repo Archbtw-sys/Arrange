@@ -21,43 +21,24 @@ Arrange is a fast, lightweight, and simple automated organizer for your download
 > 
     
     └── Think of this as home base/  
->
     └── dirs/  
->
         ├── ~/Downloads/  
->
         │   ├── foo.txt  
->
         │   ├── foo.md  
->
         │   ├── foo.sh  
->
         │   ├── foo.py  
->
         │   └── foo.c  
->
         ├── ~/Documents/  
->
         │   └── notes/  
->
         │       ├── foo.txt  
->
-        │       └── foo.md  
->
+        │       └── foo.md 
         └── ~/Projects/  
->
             └── scripts/  
->
                 ├── bash/  
->
                 │   └── foo.sh  
->
                 ├── python/  
->
                 │   └── foo.py  
->
                 └── c/  
->
                     └── foo.c
 >>As you can see, our files arrive in the Downloads directory. Then our files are distributed to their appropriate folders based on configured rules. Before we start moving anything, the script will perform a series of validation tests to ensure proper functionality. If it fails any of these conditions, we will be prompted with a message explaining the error and why it can't move our files.
 
